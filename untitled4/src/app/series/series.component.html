@@ -1,0 +1,40 @@
+
+
+
+<h1>Tv Show</h1>
+
+<div (mouseover)="showElement=true" (mouseout)="showElement=false" >
+  <span *ngIf="!showElement"></span>
+  <span *ngIf="showElement">Heyy !!</span>
+  <table  class="table" style="border: outset; text-align: center;">
+    <tr style="text-align: center;">
+
+      <th>Id</th>
+      <th>TvShow</th>
+      <th>actors</th>
+    </tr>
+    <tr *ngFor="let series of mesSeries;">
+
+      <td (click)="seriesService.setSerieTitle(series.id.toString())" style="line-height: 90px;">{{series.id}}</td>
+      <td (click)="seriesService.setSerieTitle(series.TvShow)">{{series.TvShow}}</td>
+      <td>{{series.actors}}</td>
+    </tr>
+  </table>
+
+</div>
+
+
+<div>
+  <mat-sidenav-container class="sidenav-container">
+  </mat-sidenav-container>
+  <mat-sidenav mode="side" opened position="end" >
+
+
+
+
+  </mat-sidenav>
+
+
+</div>
+
+<app-side-nav [pageTrois]="true"></app-side-nav>

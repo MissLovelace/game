@@ -1,0 +1,26 @@
+
+
+<mat-sidenav-container class="sidenav-container">
+</mat-sidenav-container>
+
+
+<mat-sidenav mode="side" opened position="end" >
+
+
+  <a [ngStyle]="{'color': pageDeux ? 'red' : 'blue'}" routerLink="/data" style="width: 150px; font-weight: bold; font-size: 20px;">Page 2</a>
+
+
+  <a [ngStyle]="{'color': pageTrois ? 'red' : 'blue'}" routerLink="/series" style="width: 150px; font-weight: bold; font-size: 20px;">Page 3</a>
+
+  <a [ngStyle]="{'color': pageFour ? 'red' : 'blue'}" routerLink="/requete" style="width: 150px; font-weight: bold; font-size: 20px;">Page 4</a>
+
+  <a [ngStyle]="{'color': pageFive ? 'red' : 'blue'}" routerLink="/game" style="width: 150px; font-weight: bold; font-size: 20px;">Page 5</a>
+
+
+
+
+  <nav> {{ mess }}</nav>
+</mat-sidenav>
+
+
+
