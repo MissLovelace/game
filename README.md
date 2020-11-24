@@ -1,3 +1,6 @@
-# game Angular
+# game Angular #Algo
 
-Jeu de combat
+petit jeu de combat développé avec Angular
+
+
+
